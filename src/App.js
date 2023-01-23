@@ -9,9 +9,11 @@ function App() {
   const [userName, setUserName] = useState("");
   const [profile, setProfile] = useState(false);
   return (
-    <userContext.Provider value={{ userName, setUserName, setProfile }}>
-      {profile ? <Profile /> : <Login />}
-    </userContext.Provider>
+    <div className="app">
+      <userContext.Provider value={{ userName, setUserName, setProfile }}>
+        {profile ? <Profile /> : <Login />}
+      </userContext.Provider>
+    </div>
   );
 }
 

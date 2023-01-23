@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { userContext } from "../helper/Context";
+import "../App.css";
 const Profile = () => {
   const { userName } = useContext(userContext);
   return (
